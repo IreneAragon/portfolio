@@ -1,0 +1,7 @@
+@use '../common' as c;
+
+.footer {
+    border-top: 2px solid c.$primary-color;
+    margin-top: auto;
+    text-align: center;
+}

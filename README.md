@@ -3,3 +3,6 @@ Welcome to my portfolio, where you can get to know me a little better, having ac
 
 ## 🚀 About this proyect: 
 Tools used in this project:
+- React
+- Next.js
+- SASS 
