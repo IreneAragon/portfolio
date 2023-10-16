@@ -1,0 +1,10 @@
+@use '../common' as c;
+
+.shoolContainer {
+    margin-bottom: 4rem;
+    border-left: 2px solid c.$primary-color;
+    padding: 1rem;
+    p {
+        margin-top: 1rem;  
+    }
+}

@@ -1,0 +1,33 @@
+@use '../common' as c;
+
+.toolsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 20px;
+    padding: 1rem 0;
+
+    .tools {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100px;
+        &:hover {
+            svg {
+                transition: 0.3s;
+                fill: c.$primary-color;
+            }
+            span {
+                transition: 0.3s;
+                color: c.$primary-color;
+            }
+        }
+        svg {
+            fill: c.$white-color;
+            margin-bottom: 0.3rem;
+        }
+    }
+}
+
+.text {
+    padding-top: 2rem;
+}

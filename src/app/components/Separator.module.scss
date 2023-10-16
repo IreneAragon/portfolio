@@ -1,0 +1,29 @@
+@use '../common' as c;
+
+.section {
+    display: grid;
+    justify-items: center;
+    margin: 5rem 0;
+    .line {
+        display: flex;
+        width: 1px;
+        height: 100px;
+        background: linear-gradient(c.$base-color,c.$primary-color);
+    }
+    .stepInfoContainer {
+        display: grid;
+        justify-items: center;
+        color: c.$primary-color;
+        .stepInfo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: c.$base-color;
+            background-color: c.$primary-color;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+    }
+}

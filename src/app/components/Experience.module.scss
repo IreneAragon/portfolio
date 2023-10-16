@@ -1,0 +1,50 @@
+@use '../common' as c;
+
+.section {
+    margin-bottom: 4rem;
+}
+.companyContainer {
+    border-left: 2px solid c.$primary-color;
+    .companyHeader {
+        display: flex;
+        align-items: flex-end;
+        padding: 1rem;
+        .company {
+            margin-left: 0.5rem;
+            div {
+                display: flex;
+                align-items: baseline;
+                small {
+                    margin: 0 0.5rem;
+                }
+            }
+        }
+    }
+    .companyBody {
+        padding: 1rem;
+        p {
+            font-weight: bold;
+        }
+        ul {
+            li {
+                &::marker {
+                    color: c.$primary-color
+                }
+            }
+        }
+        .toolsContainer {
+            ul {
+                list-style: none;  
+                display: flex;
+                flex-wrap: wrap;
+                li {
+                    border: 1px solid c.$primary-color;
+                    background-color: c.$dark-color;
+                    border-radius: 6px;
+                    padding: 0.5rem;
+                    margin: 0.2rem;
+                }
+            }
+        }
+    }
+}

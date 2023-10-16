@@ -2,20 +2,23 @@
 
 .header {
     border-bottom: 2px solid c.$primary-color;
+    background-color: c.$base-color;
+    position: sticky; 
+    top: 0; 
 }
 
 .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-right: 1rem;
-    padding-left: 3vw;
+    padding: 0.5rem 5vw;
     ul {
         list-style: none;
         display:flex;
         justify-content: flex-end;
+        gap: 1rem;
         li {
-            margin: 0 1rem;
+            text-wrap: nowrap;
         }
     }
     .desktopMenu {
@@ -29,7 +32,6 @@
 .li {
     display: inline-block;
     position: relative;
-    padding: 0 1rem 0.2rem 1rem;
     cursor: pointer;
     &::after {
         content: '';
@@ -48,10 +50,3 @@
         transform-origin: bottom left;
     }
 }
-
-@media (max-width: 768px) {
-    .header {
-        border-bottom: 2px solid c.$white-color;
-    }
-}
-  

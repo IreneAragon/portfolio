@@ -1,0 +1,55 @@
+@use '../common' as c;
+
+.section {
+    display: grid;
+    grid-gap: 20px; 
+    align-items: center; 
+    grid-template-columns: 1fr;
+    justify-items: center;
+    
+    .imgContainer {
+        .image {
+            border: 3px solid c.$primary-color;
+            border-radius: 50%;
+        }
+    }
+    
+    .infoContainer {
+        h2 {
+            color: c.$primary-color;
+        }
+        .contactInfoContainer {
+            display: flex;
+            flex-direction: column;
+            .contactInfoElement {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                width: fit-content;
+                svg {
+                    fill: c.$white-color;
+                }
+                a {
+                    margin: 5px 0;
+                    color: c.$white-color;
+                }
+                &:hover {
+                    cursor: pointer;
+                    svg {
+                        transition: 0.3s;
+                        fill: c.$primary-color;
+                    }
+                    a {
+                        color: c.$primary-color;
+                    }
+                }
+                &:not(:last-child) {
+                    margin-bottom: 5px;
+                }
+                &:first-child {
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}
