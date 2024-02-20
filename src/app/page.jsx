@@ -14,18 +14,18 @@ export default function HomePage() {
     <main>
       <Presentation />
       <Separator 
-        imageSrc="/source-code-icon.png" 
-        headingText="Herramientas"
+        imageSrc='/source-code-icon.png' 
+        headingText='Herramientas'
       />
       <Tools />
       <Separator 
-        imageSrc="/work-icon.png" 
-        headingText="Experiencia laboral"
+        imageSrc='/work-icon.png' 
+        headingText='Experiencia laboral'
       />
       <Experience />
       <Separator 
-        imageSrc="/school-icon.png" 
-        headingText="Formación Reglada"
+        imageSrc='/school-icon.png' 
+        headingText='Formación Reglada'
       />
       <Training />
     </main>

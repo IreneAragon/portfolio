@@ -19,13 +19,13 @@ export function Navigation () {
             <nav className={styles.nav}>
                 <Link href="http://localhost:3000/">
                     <Image 
-                        src="/myLogo.jpg"
+                        src="/logo.svg"
                         width={40}
                         height={40}
                         alt="Irene Aragon logo"
                     />
                 </Link>
-                <ul>
+                <ul className={styles.list} aria-label="Navegación">
                     {links.map(({ label, route }) => (
                         <li key={route} className={styles.li}>
                             <Link href={route}>{label}</Link>

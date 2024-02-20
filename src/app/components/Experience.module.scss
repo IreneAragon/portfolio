@@ -5,12 +5,13 @@
 }
 .companyContainer {
     border-left: 2px solid c.$primary-color;
+    margin-bottom: 3rem;
     .companyHeader {
         display: flex;
         align-items: flex-end;
         padding: 1rem;
         .company {
-            margin-left: 0.5rem;
+            margin-left: 1rem;
             div {
                 display: flex;
                 align-items: baseline;
@@ -25,24 +26,17 @@
         p {
             font-weight: bold;
         }
-        ul {
+        .list {
+            list-style: disc;  
+            display: block;
+            padding-left: 1rem;
             li {
+                border: unset;
+                background-color: unset;
+                padding: unset;
+                margin: unset;
                 &::marker {
                     color: c.$primary-color
-                }
-            }
-        }
-        .toolsContainer {
-            ul {
-                list-style: none;  
-                display: flex;
-                flex-wrap: wrap;
-                li {
-                    border: 1px solid c.$primary-color;
-                    background-color: c.$dark-color;
-                    border-radius: 6px;
-                    padding: 0.5rem;
-                    margin: 0.2rem;
                 }
             }
         }

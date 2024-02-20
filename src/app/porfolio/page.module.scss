@@ -1,0 +1,92 @@
+@use '../common' as c;
+
+.centeredHeadline {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    grid-gap: 20px;
+    padding: 2rem 0;
+    article {
+        border: 1px solid c.$primary-color;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .cardBody {
+            width: inherit;
+            img {
+                width: 100%;
+                height: 300px;
+                margin-bottom: 2rem;
+                object-fit: cover;
+                object-position: top;
+                transition: 7s;
+                &:hover {
+                    object-position: bottom;  
+                }
+            }
+        }
+        .cardFooter {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            width: 100%;
+            margin-top: 3rem;
+            .btn {
+                font: inherit;
+                cursor: pointer;
+                margin: 0;
+                padding: 0;
+                appearance: none;
+                border-radius: 0;
+                border: 1px solid c.$primary-color;
+                border-right: 0px;
+                padding: 0.5rem 1rem;
+                color: c.$primary-color;
+                background-color: transparent;
+                position: relative;
+                transition: 0.3s;
+                width: inherit;
+                text-align: center;
+                &::before {
+                  content: '';
+                  position: absolute;
+                  right: 0;
+                  top: 0;
+                  height: 2px;
+                  border: 1px solid c.$primary-color;
+                }
+                &::after {
+                  content: '';
+                  position: absolute;
+                  right: 0;
+                  bottom: 0;
+                  height: 2px;
+                  border: 1px solid c.$primary-color;
+                }
+                &:hover {
+                  background-color: c.$primary-color;
+                  color: c.$base-color;
+                  &::before {
+                    content: '';
+                    position: absolute;
+                    right: 0;
+                    top: 3px;
+                    height: 28px;
+                    border: 1px solid c.$base-color;
+                  }
+                }
+              }
+        }
+    }
+}
+@media (max-width: 1024px) {
+    .card {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+}
