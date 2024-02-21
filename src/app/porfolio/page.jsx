@@ -1,6 +1,9 @@
 import styles from './page.module.scss'
-import Link from 'next/link'
-import Image from 'next/image'
+// import Link from 'next/link'
+// import Image from 'next/image'
+import { Inter } from 'next/font/google'
+
+const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Irene Aragón | Porfolio',
@@ -14,9 +17,16 @@ const fetchProjects = () => {
 export default async function PortfolioPage() {
   const projects = await fetchProjects()
   return (
-    <main>
-      <h1 className={styles.centeredHeadline}>Mis proyectos</h1>
-      <section aria-label='Sección de proyectos' className={styles.card}>
+    <main className={inter.className}>
+      <section className={styles.portfolio} aria-label='Proyectos'>
+        <h1>Mis proyectos</h1>
+        <h2>Estoy trabajando en ello, ¡vuelve pronto!</h2>
+        <div className={styles.animation}>
+          <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+          <dotlottie-player src="https://lottie.host/8be2c892-8311-4ab5-8930-4b1ccb8da0ee/MNhapgFuiw.json" background="transparent" speed="1" loop autoplay></dotlottie-player>
+        </div>
+      </section>
+      {/* <section aria-label='Sección de proyectos' className={styles.card}>
         {projects.map(project => (
           <article key={project.id}>
             <div className={styles.cardBody}>
@@ -46,7 +56,7 @@ export default async function PortfolioPage() {
             </div>
           </article>
         ))}
-      </section>
+      </section> */}
     </main>
   )
 }

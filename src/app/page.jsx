@@ -3,6 +3,9 @@ import { Separator } from './components/Separator'
 import { Tools } from './components/Tools'
 import { Experience } from './components/Experience'
 import { Training } from './components/Training'
+import { Inter } from 'next/font/google'
+
+const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Irene Aragón | Front end developer',
@@ -11,7 +14,7 @@ export const metadata = {
 
 export default function HomePage() {
   return (
-    <main>
+    <main className={inter.className}>
       <Presentation />
       <Separator 
         imageSrc='/source-code-icon.png' 

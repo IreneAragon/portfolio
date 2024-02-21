@@ -9,6 +9,7 @@ body {
   display: flex;
   flex-direction: column;
   cursor: default;
+  // font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 h1 {font-size: clamp(2.25rem, 1.1563rem + 3.5vw, 3.125rem);}
 h2 {font-size: clamp(1.75rem, 0.3438rem + 4.5vw, 2.875rem);}
