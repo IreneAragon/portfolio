@@ -8,7 +8,6 @@ export const metadata = {
 }
 
 export default async function PortfolioPage() {
-  const projects = await fetchProjects()
   return (
     <main className={inter.className}>
       <section className={styles.portfolio} aria-label='Proyectos'>
