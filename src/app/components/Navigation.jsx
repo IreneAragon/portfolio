@@ -17,9 +17,9 @@ export function Navigation () {
     return (
         <header className={styles.header}>
             <nav className={styles.nav}>
-                <Link href="http://localhost:3000/">
+                <Link href="https://irenearagon.github.io/portfolio/">
                     <Image 
-                        src="/logo.svg"
+                        src="/portfolio/logo.svg"
                         width={40}
                         height={40}
                         alt="Irene Aragon logo"
