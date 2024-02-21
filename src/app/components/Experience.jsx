@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import styles from './Experience.module.scss'
 
+
 export function Experience () {
     return (
         <section className={styles.section} aria-label='Experiencia laboral'>
