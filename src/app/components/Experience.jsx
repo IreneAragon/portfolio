@@ -8,7 +8,7 @@ export function Experience () {
             <article className={styles.companyContainer}>
                 <div className={styles.companyHeader}>
                     <Image 
-                        src='/boycor-company.jpg'
+                        src='/portfolio/boycor-company.jpg'
                         width={50}
                         height={50}
                         alt='Logo de Boycor'
@@ -57,7 +57,7 @@ export function Experience () {
             <article className={styles.companyContainer}>
                 <div className={styles.companyHeader}>
                     <Image 
-                        src='/BS-company.jpg'
+                        src='/portfolio/BS-company.jpg'
                         width={50}
                         height={50}
                         alt='Logo de BeSoccer'
@@ -104,7 +104,7 @@ export function Experience () {
             <article className={styles.companyContainer}>
                 <div className={styles.companyHeader}>
                     <Image 
-                        src='/wom-company.png'
+                        src='/portfolio/wom-company.png'
                         width={50}
                         height={50}
                         alt='Logo de Wom marketing'
@@ -147,7 +147,7 @@ export function Experience () {
             <article className={styles.companyContainer}>
                 <div className={styles.companyHeader}>
                     <Image 
-                        src='/OP-company.png'
+                        src='/portfolio/OP-company.png'
                         width={50}
                         height={50} 
                         alt='Logo de Oferplay'

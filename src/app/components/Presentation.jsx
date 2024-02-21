@@ -6,7 +6,7 @@ export function Presentation () {
         <section className={styles.section} aria-label='Presentación'>
             <div className={styles.imgContainer}>
                 <Image 
-                    src='/profile-320.png'
+                    src='/portfolio/profile-320.png'
                     width={280}
                     height={280}
                     alt='Fotografía de Irene Aragón'

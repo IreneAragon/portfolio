@@ -3,13 +3,15 @@ import styles from './Separator.module.scss'
 
 export function Separator (props) {
     const { imageSrc, headingText } = props
+    const fullPath = "/portfolio" + imageSrc;
+
     return (
         <section className={styles.section} aria-label='Separador que se pone antes de cada nueva sección'>
             <span className={styles.line}></span>
             <div className={styles.stepInfoContainer}>
                 <div className={styles.stepInfo}>
                     <Image 
-                        src={imageSrc}
+                        src={fullPath}
                         width={20}
                         height={20}
                         alt=''
