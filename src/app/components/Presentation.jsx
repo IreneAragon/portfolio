@@ -42,7 +42,7 @@ export function Presentation () {
                     ¡Hola mundo! Soy desarrolladora web Front end. 
                     Soy creativa, resolutiva y me gusta colaborar para que exista un buen ambiente laboral. 
                     A continuación te detallo todo sobre las herramientas que manejo, mi experiencia laboral y mi formación académica. 
-                    No olvides echar un ojo a mis <a href='/porfolio'>proyectos</a> para conocer mejor mis habilidades.
+                    No olvides echar un ojo a mis <a href='/portfolio/porfolio'>proyectos</a> para conocer mejor mis habilidades.
                 </p>
             </div>
         </section>

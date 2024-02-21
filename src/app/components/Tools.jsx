@@ -80,7 +80,7 @@ export function Tools () {
                 </div>
             </div>
             <p className={styles.text}>
-                Estas son las herramientas que he estudiado de forma autodidacta o mediante algún curso online, pero de las cuales aún no tengo experiencia laboral, no olvides echar un ojo a la página de <a href='/porfolio'>proyectos</a>, ahí podrás comprobar mis habilidades con ellas. 
+                Estas son las herramientas que he estudiado de forma autodidacta o mediante algún curso online, pero de las cuales aún no tengo experiencia laboral, no olvides echar un ojo a la página de <a href='/portfolio/porfolio'>proyectos</a>, ahí podrás comprobar mis habilidades con ellas. 
             </p>
             <div className={styles.toolsContainer}>
                 <div className={styles.tools}>
